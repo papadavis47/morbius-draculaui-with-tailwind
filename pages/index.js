@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Morbius - A Fan Page - with DraculaUI</title>
+        <title>Morbius - A Fan Page</title>
+        <meta name='description' content='A Fan Page using Tailwind and DraculaUI' />
+        <link rel='icon' href='/dracula-fav.ico' />
       </Head>
       <div className='flex flex-col items-center h-screen w-screen bg-black'>
         <div className='flex flex-col items-center mt-4 py-4'>
@@ -18,6 +20,14 @@ export default function Home() {
         <Box m='md' className='w-1/2'>
           <Divider color='orange' />
         </Box>
+        <Image
+          src='/morbius-poster.jpg'
+          alt='Morbius-Movie Poster'
+          height={300}
+          width={200}
+          quality='90'
+          className='hover:scale-75 transition-transform'
+        />
       </div>
     </>
   );
